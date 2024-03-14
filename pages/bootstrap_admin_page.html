@@ -1,0 +1,112 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+
+  <body style="background-color: rgb(183, 226, 212); display: flex; width: 1000px;">
+    <div style="background-color: gray; width:20%; height: 1000px; border: 1px solid black;">
+      <button type="button" class="btn btn-link">Toolbar</button>
+      <br />
+      <br />
+      <br>
+      <button type="button" class="btn btn-link">Home</button>
+      <br />
+      <button type="button" class="btn btn-link">Transactions</button>
+      <br />
+      <button type="button" class="btn btn-link">Payments</button>
+      <br />
+      <button type="button" class="btn btn-link">Accounts</button>
+    </div style="dispaly: flex-wrap">
+
+    <div style="width:80%; padding: 40px;  height: 1000px; border: 1px solid black; flex-wrap: nowrap">
+        <div style="display: flex; height: 30%;">
+            <div style="width: 40%; height: 100%; border-bottom: 1px solid black; border-right: 1px solid black; padding-right:20px;">
+                <h2>Welcome</h2>
+                <p>Recent Transactions:</p>
+                <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>Xfinity</td>
+                        <td>$65</td>
+                      </tr>
+                      <tr>
+                        <td>ATT</td>
+                        <td>$156</td>
+                      </tr>
+                      <tr>
+                        <td>Mailchimp</td>
+                        <td>$10</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+            <div style="width: 60%; height: 100%; border-bottom: 1px solid black;padding-left: 20px;;">
+                <h2>Balance</h2>
+                <h1>$4,567,320</h1>
+                <img src="data:image/png;base64,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" alt=""
+                width="200px;">
+            </div>
+
+        </div>
+
+        <div style="display: flex; height: 30%;">
+            <div style=" width: 60%; height: 100%; border-right: 1px solid black; padding: 20px;">
+                <h2>Upcoming Bills</h2>
+                <br>
+                <button type="button" class="btn btn-secondary">Excel due 4/1</button>
+                <br>
+                <br>
+                <button type="button" class="btn btn-secondary">Insurance due 4/5</button>
+                <br>
+                <br>
+                <button type="button" class="btn btn-secondary">Car due 4/10</button>
+
+            </div>
+            <div style="width: 40%; height: 100%; padding: 20px;">
+                <h2>Search Transactions</h2>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"></label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+            
+            </div>
+    
+        </div>
+        <div style="width: 100%; display: flex; height: 40%; border: 1px solid black; padding:20px;">
+            <div style="width: 100%;">
+                    <h2>Goals</h2>
+                    <h3>Checking</h3>
+                    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-success" style="width: 25%">25%</div>
+                      </div>
+                    <h3>Savings</h3>
+                    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+                      </div>
+                    <h3>Money Market</h3>
+
+
+                  <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                  </div>
+        </div>
+    </div>
+    <br>
+
+  </body>
+</html>
